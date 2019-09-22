@@ -192,6 +192,8 @@ public class RSSFeedItem {
     /// Media RSS is a new RSS module that supplements the <enclosure>
     /// capabilities of RSS 2.0.
     public var media: MediaNamespace?
+
+    public var image: String?
     
     public init() { }
     

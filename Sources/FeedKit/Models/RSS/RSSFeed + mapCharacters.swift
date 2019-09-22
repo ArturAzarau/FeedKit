@@ -34,6 +34,8 @@ extension RSSFeed {
     func map(_ string: String, for path: RSSPath) {
         
         switch path {
+        case .rssChannelItemImage:
+            self.items?.last?.image = string
         case .rssChannelTitle:                                      self.title                                                      = self.title?.appending(string) ?? string
         case .rssChannelLink:                                       self.link                                                       = self.link?.appending(string) ?? string
         case .rssChannelDescription:                                self.description                                                = self.description?.appending(string) ?? string
